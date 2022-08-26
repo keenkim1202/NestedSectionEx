@@ -9,6 +9,8 @@ import UIKit
 
 // https://sapandiwakar.in/nested-sections-in-uitableview/
 // https://stackoverflow.com/questions/35394191/making-simple-accordion-tableview-in-swift
+// https://github.com/jeantimex/ios-swift-collapsible-table-section-in-grouped-section/blob/master/README.md
+// https://mobikul.com/create-multilevel-uitableview-in-swift-without-third-party/
 
 class ViewController: UIViewController {
     @IBOutlet weak var subjectTableView: UITableView!
