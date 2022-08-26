@@ -8,22 +8,11 @@
 import UIKit
 
 // https://sapandiwakar.in/nested-sections-in-uitableview/
+// https://stackoverflow.com/questions/35394191/making-simple-accordion-tableview-in-swift
+
 class ViewController: UIViewController {
-    
     @IBOutlet weak var subjectTableView: UITableView!
     
-    enum CellType: String {
-        case section = "SectionCell"
-        case subsection = "SubsectionCell"
-        case item = "ItemCell"
-        
-        func dequeueCell(_ tableView: UITableView) -> UITableViewCell? {
-          let cell = tableView.dequeueReusableCell(withIdentifier: self.rawValue)
-          return cell
-        }
-    }
-    
-    let cells: [CellType] = [.section, .section, .item]
     let sectionTitles: [String] = ["Section 1", "Section 2", "Section 3"]
     let subsectionTitles: [String] = ["subsection 1", "subsection 2"]
     let itemTitles: [String] = ["A", "B", "C", "D", "E"]
