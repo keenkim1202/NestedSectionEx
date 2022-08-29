@@ -1,5 +1,5 @@
 //
-//  Subject.swift
+//  Section.swift
 //  NestedTableviewEx
 //
 //  Created by KEEN KIM on 2022/08/26.
@@ -15,5 +15,6 @@ struct Section {
 struct SubSection {
     let subSection: String
     let items: [String]
+    var isExpanded: Bool = false
 }
 
